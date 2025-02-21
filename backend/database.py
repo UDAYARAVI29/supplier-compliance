@@ -9,7 +9,7 @@ load_dotenv()
 
 # Get the database URL from environment variables.
 # Ensure the URL uses the 'postgresql+psycopg2' dialect.
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+psycopg2://postgres:1234@localhost/supplier_compliance")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+psycopg2:// : @localhost/supplier_compliance")
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
